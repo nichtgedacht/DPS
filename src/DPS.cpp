@@ -27,35 +27,12 @@ DPS::~DPS(void)
 	end();
 }
 
-
-
 /**
  * Standard I2C begin function
  *
  * &bus: 			I2CBus which connects MC to Sensor
  * slaveAddress: 	Address of the Sensor (0x77 or 0x76)
  */
-/*
-void DPS::begin(TwoWire &bus, uint8_t slaveAddress)
-{
-	//this flag will show if the initialization was successful
-	m_initFail = 0U;
-
-	//Set I2C bus connection
-	m_i2cbus = &bus;
-	m_slaveAddress = slaveAddress;
-
-	// Init bus
-	Wire.begin();
-
-	Wire.setClock(500000L);
-
-	delay(50);		//startup time of Sensor
-
-	init();
-}
-*/
-
 uint8_t DPS::begin(uint8_t slaveAddress)
 {
 	m_initFail = 0U;
