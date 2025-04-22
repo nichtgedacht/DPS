@@ -785,7 +785,7 @@ int16_t DPS::correctTemp(void)
 void DPS::init(void)
 {
 	int16_t prodId = readByteBitfield(DPS__REG_INFO_PROD_ID);
-	if(prodId != DPS__PROD_ID)
+	if(prodId != DPS__PROD_ID && prodId != DPS__NPROD_ID)
 	{
 		//Connected device is not a Sensor
 		m_initFail = 1U;

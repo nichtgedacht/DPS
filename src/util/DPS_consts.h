@@ -8,6 +8,7 @@
 
 			//general Constants
 #define DPS__PROD_ID					0U
+#define DPS__NPROD_ID					1U
 #define DPS__STD_SLAVE_ADDRESS 		0x77U
 #define DPS__LSB						0x01U
 #define DPS__TEMP_STD_MR				2U
